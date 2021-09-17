@@ -12,11 +12,15 @@ export default {
 </script>
 
 <style>
+
 #app{
    width: 100%;
    overflow-x: hidden;
 }
 body{
   margin: 0;
+  height: 100%;
 }
+
+
 </style>
