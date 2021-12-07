@@ -44,152 +44,76 @@
         </div>
       </div>
     </nav>
-    <section class="content-wrap" style="min-height:100%;height:auto">
-      <div class="container">
-        <div class="row">
-          <main class="col-md-8 main-content">
-            <div class="carousel">
-              <a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2" target="_blank">
-                <img src="/./img/head-img.jpg" alt />
-              </a>
-            </div>
+    <section class="content-wrap" style="height:82.09%;">
+      <div class="main">
+        <div class="main-content">
+          <div class="carousel">
+            <img src="../assets/head-img.jpg" alt="">
+          </div>
+          <div>
             <article class="post">
-              <div class="post-content">
-                <div class="post-head home-post-head">
-                  <h1 class="post-title">
-                    <a href="/2021/06/29/hello-world/">Hello World</a>
-                  </h1>
-                  <div class="post-meta">
-                    &bull;
-                    <time class="post-date" datetime title>2021年06月29日</time>
+                <div class="post-content">
+                    <div class="post-head home-post-head">
+                        <h1 class="post-title">
+                            <a href="/2021/09/17/%E5%BC%A0%E6%AD%A3%E9%B9%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+                                张正鹏的第一篇博客</a>
+                        </h1>
+                        <div class="post-meta"> &bull;
+                            <time class="post-date" datetime="" title="">
+                                2021年09月17日
+                            </time>
+                        </div>
+                    </div>
+                    <p class="brief"> 
+                    </p>
+                </div>
+                <footer class="post-footer clearfix">
+                  <div class="pull-left tag-list">
+                      <div class="post-meta" style="display:flex">
+                        <p>标签：</p>
+                       <span class="categories-meta fa-wrap">
+                          前端 css
+                       </span>  
+                    </div>
                   </div>
-                </div>
-                <p
-                  class="brief"
-                >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...</p>
-              </div>
-              <footer class="post-footer clearfix">
-                <div class="pull-left tag-list">
-                  <div class="post-meta">
-                    <span class="categories-meta fa-wrap">
-                      <i class="fa fa-folder-open-o"></i>
-                    </span>
-                    <span class="fa-wrap">
-                      <i class="fa fa-tags"></i>
-                      <span class="tags-meta"></span>
-                    </span>
+                  <div class="post-permalink">
+                      <a href="#" class="btn btn-default">
+                          Read</a>
                   </div>
-                </div>
-                <div class="post-permalink">
-                  <a href="/2021/06/29/hello-world/" class="btn btn-default">Read</a>
-                </div>
-              </footer>
+                </footer>
             </article>
-          </main>
-          <aside class="col-md-4 sidebar">
-            <div class="widget">
-              <h3 class="title">Search</h3>
-              <div id="search-form">
+          </div>
+        </div>
+        <div class="main-nav">
+          <div class="widget">
+            <h3 class="title">
+                Search
+            </h3>
+            <div id="search-form">
                 <div id="result-mask" class="hide"></div>
                 <div class="search-area">
-                  <input  id="search-key"  type="search"  autocomplete="off"  placeholder="Search What？" />
-                  <button type="button" class="search-form-submit" id="search-local">localSearch</button>
+                    
+                    <input id="search-key" type="search" autocomplete="off" placeholder="Search What？">
+                    <button type="button" class="search-form-submit" id="search-local">
+                        localSearch</button>
+                    
+                    
                 </div>
                 <div id="result-wrap" class="hide">
-                  <div id="search-result"></div>
+                    <div id="search-result"></div>
                 </div>
                 <div class="hide">
-                  <template id="search-tpl">
-                    <div class="item">
-                      <a href="/{path}" title="{title}">
-                        <div class="title">{title}</div>
-                        <div class="content">{content}</div>
-                      </a>
-                    </div>
-                  </template>
+                    <template id="search-tpl">
+                        <div class="item">
+                            <a href="/{path}" title="{title}">
+                                <div class="title">{title}</div>
+                                <div class="content">{content}</div>
+                            </a>
+                        </div>
+                    </template>
                 </div>
-              </div>
             </div>
-
-            <div class="widget">
-              <h3 class="title">Notification</h3>
-              <div class="notification">
-                <p>
-                  主题下载：
-                  <a
-                    href="https://github.com/shenliyang/hexo-theme-snippet"
-                    title="fork me"
-                    target="_blank"
-                  >Snippet主题</a>
-                  <br />主题使用：
-                  <a
-                    href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题"
-                    title
-                    target="_blank"
-                  >常见使用问题</a>
-                  <br />支持主题：
-                  <a
-                    target="_blank"
-                    rel="noopener"
-                    href="https://github.com/shenliyang/hexo-theme-snippet/stargazers"
-                  >Star一下</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="widget">
-              <h3 class="title">Social</h3>
-              <div class="content social">
-                <a
-                  href="//github.com/shenliyang"
-                  rel="external nofollow"
-                  title="Github"
-                  target="_blank"
-                >
-                  <i class="git fa fa-git"></i>
-                </a>
-
-                <a href="mailto:snippet@91h5.cc" rel="external nofollow" title="邮箱" target="_blank">
-                  <i class="envelope-o fa fa-envelope-o"></i>
-                </a>
-
-                <a href="/" rel="external nofollow" title="联系QQ" target="_blank">
-                  <i class="qq fa fa-qq"></i>
-                </a>
-
-                <a href="/" rel="external nofollow" title="微信" target="_blank">
-                  <i class="weixin fa fa-weixin"></i>
-                </a>
-
-                <a href="/" rel="external nofollow" title="QQ群" target="_blank">
-                  <i class="users fa fa-users"></i>
-                </a>
-
-                <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
-                  <i class="feed fa fa-feed"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="widget">
-              <h3 class="title">Archives</h3>
-              <ul class="archive-list">
-                <li class="archive-list-item">
-                  <a class="archive-list-link" href="/archives/2021/06/">
-                    <i class="fa" aria-hidden="true">2021年06月</i>
-                  </a>
-                  <span class="archive-list-count">1</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="widget">
-              <h3 class="title">Friends</h3>
-              <div class="content friends-link">
-                <a href="https://hexo.io/zh-cn/" class="fa" target="_blank">Hexo官网</a>
-              </div>
-            </div>
-          </aside>
+          </div>
         </div>
       </div>
     </section>
@@ -239,6 +163,43 @@ export default {
   methods: {}
 };
 </script>
+<style  scoped>
+.hello{
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 100px;
+  background: #ebebeb;
+}
+.main-header{
+  margin-top: -100px;
+}
+.content-wrap{
+  margin-top: 20px;
+  background: #ebebeb;
+}
+.main{
+  width: 1170px;
+  margin:0 auto; 
+  height: 100%;
+  display: flex;
+}
+.main-content{
+  width: 66.66%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-nav{
+  width: 33.33%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.widget{
+  background: #fff;
+  padding: 16px 25px;
+}
+</style>
 <style src="../assets/css/style.css"></style>
 <style src="../assets/css/font-awesome.min.css"></style>
 <style src="../assets/css/bootstrap.min.css"></style>
