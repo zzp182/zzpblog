@@ -22,7 +22,7 @@
               <a class="navbar-brand" href="http://example.com">Hexo</a>
             </div>
             <div class="collapse navbar-collapse" id="main-menu">
-              <ul class="menu">
+              <!-- <ul class="menu">
                 <li role="presentation" class="text-center">
                   <a href="/"> <i class="fa"></i>  Home  </a>
                 </li>
@@ -38,7 +38,23 @@
                 <li role="presentation" class="text-center">
                   <a href="/"> <i class="fa"></i>  工具  </a>
                 </li>
-              </ul>
+              </ul> -->
+              <el-menu
+              :default-active="this.$route.path"
+              class="el-menu-demo"
+              mode="horizontal"
+              @select="handleSelect"
+              router
+              background-color="#fff"
+              text-color="#333"
+              active-text-color="#0084ff"
+              >
+                <el-menu-item v-for="(item,i) in navList" :key="i" :index="item.name">
+                      <template slot="title">
+                        <span> {{ item.navItem }}</span>
+                      </template>
+                </el-menu-item>
+              </el-menu>
             </div>
           </div>
         </div>
@@ -96,8 +112,6 @@
                     <input id="search-key" type="search" autocomplete="off" placeholder="Search What？">
                     <button type="button" class="search-form-submit" id="search-local">
                         localSearch</button>
-                    
-                    
                 </div>
                 <div id="result-wrap" class="hide">
                     <div id="search-result"></div>
@@ -156,7 +170,13 @@ export default {
   name: "Main",
   data() {
     return {
-      widthFlag: false
+      navList:[
+             {name:'/', navItem:'Home'},
+             {name:'/report/companyRisk',navItem:'前端'},
+             {name:'/report/companyManager',navItem:'后端'},
+             {name:'/report/companyRisk',navItem:'算法'},
+             {name:'/report/companyManager',navItem:'工具'},
+        ]
     };
   },
   created() {},
@@ -198,6 +218,10 @@ export default {
 .widget{
   background: #fff;
   padding: 16px 25px;
+}
+.el-menu.el-menu--horizontal {
+      margin-left: 370px;
+      border: 0;
 }
 </style>
 <style src="../assets/css/style.css"></style>
