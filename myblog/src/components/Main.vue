@@ -22,28 +22,10 @@
               <a class="navbar-brand" href="http://example.com">Hexo</a>
             </div>
             <div class="collapse navbar-collapse" id="main-menu">
-              <!-- <ul class="menu">
-                <li role="presentation" class="text-center">
-                  <a href="/"> <i class="fa"></i>  Home  </a>
-                </li>
-                <li role="presentation" class="text-center">
-                  <a href="/"> <i class="fa"></i>  前端  </a>
-                </li>
-                <li role="presentation" class="text-center">
-                  <a href="/"> <i class="fa"></i>  后端  </a>
-                </li>
-                <li role="presentation" class="text-center">
-                  <a href="/"> <i class="fa"></i>  算法  </a>
-                </li>
-                <li role="presentation" class="text-center">
-                  <a href="/"> <i class="fa"></i>  工具  </a>
-                </li>
-              </ul> -->
               <el-menu
               :default-active="this.$route.path"
               class="el-menu-demo"
               mode="horizontal"
-              @select="handleSelect"
               router
               background-color="#fff"
               text-color="#333"
@@ -61,7 +43,8 @@
       </div>
     </nav>
     <section class="content-wrap" style="height:82.09%;">
-      <div class="main">
+      <router-view />
+      <!-- <div class="main">
         <div class="main-content">
           <div class="carousel">
             <img src="../assets/head-img.jpg" alt="">
@@ -129,7 +112,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <footer class="main-footer">
       <div class="container">
@@ -171,11 +154,11 @@ export default {
   data() {
     return {
       navList:[
-             {name:'/', navItem:'Home'},
-             {name:'/report/companyRisk',navItem:'前端'},
-             {name:'/report/companyManager',navItem:'后端'},
-             {name:'/report/companyRisk',navItem:'算法'},
-             {name:'/report/companyManager',navItem:'工具'},
+             {name:'/pages/home', navItem:'Home'},
+             {name:'/pages/Browse',navItem:'前端'},
+             {name:'/pages/Service',navItem:'后端'},
+             {name:'/pages/Algorithm',navItem:'算法'},
+             {name:'/pages/Tool',navItem:'工具'},
         ]
     };
   },
